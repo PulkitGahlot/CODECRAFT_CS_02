@@ -7,6 +7,10 @@ from io import BytesIO
 
 app = FastAPI()
 
+@app.get("/")
+def home():
+    return {"status": "Backend is live!"}
+
 origins = ["*"]
 
 app.add_middleware(
