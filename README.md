@@ -139,6 +139,7 @@ cryptographer/
 - Or Scan the QR Code for Direct Download
   <img width="300" height="300" alt="app_download_qr" src="https://github.com/user-attachments/assets/2490b01f-e632-43f3-bc45-6bc0adabfb4f" />
 
+---
 
 ## 👨‍💻 Author
 
