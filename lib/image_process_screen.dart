@@ -39,7 +39,7 @@ class _ImageProcessScreenState extends State<ImageProcessScreen> {
 
     final request = http.MultipartRequest(
       'POST',
-      Uri.parse('http://192.168.29.111:8000/image_cipher'),
+      Uri.parse('https://cryptographer-backend.onrender.com/image_cipher'),
     );
 
     request.fields['mode'] = widget.mode;
