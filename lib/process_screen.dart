@@ -141,11 +141,11 @@ class _ProcessScreenState extends State<ProcessScreen> {
                   // ),
                   const SizedBox(height: 200),
                   SizedBox(
-                    height: 60,
+                    height: MediaQuery.of(context).size.width * 0.24,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
                       onPressed: _processText,
-                      child: Text('Convert',style: GoogleFonts.roboto(fontSize: 26),),
+                      child: Text('Convert',style: GoogleFonts.roboto(fontSize: 32),),
                     ),
                   )
                 ],
