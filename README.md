@@ -139,6 +139,7 @@ cryptographer/
 - Or Scan the QR Code for Direct Download
   <img width="300" height="300" alt="app_download_qr" src="https://github.com/user-attachments/assets/18dd4f6d-a909-4c20-9515-23a252163075" />
 
+**NOTE**: Encryption and Decryption of Images takes some time (Due to Slow Server response sometime). Please wait for some time to get the Output of the Image Encryption and Decryption. Thank you!
 
 ---
 
