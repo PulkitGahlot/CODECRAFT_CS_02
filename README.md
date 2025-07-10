@@ -132,6 +132,14 @@ cryptographer/
 - Used MediaStore-compliant saving with proper permissions
 - UI refined with Spacer(), Column alignment, and text centering
 
+---
+
+## Download the application Here
+- [Cryptographer](https://github.com/PulkitGahlot/CODECRAFT_CS_02/releases/download/v1.0.0/Cryptographer.apk)
+- Or Scan the QR Code for Direct Download
+  <img width="3000" height="3000" alt="app_download_qr" src="https://github.com/user-attachments/assets/2490b01f-e632-43f3-bc45-6bc0adabfb4f" />
+
+
 ## 👨‍💻 Author
 
 Hi, I'm **Pulkit Gahlot**, a cyber security enthusiast and passionate to be an ethical hacker.
