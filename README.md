@@ -135,9 +135,10 @@ cryptographer/
 ---
 
 ## Download the application Here
-- [Cryptographer](https://github.com/PulkitGahlot/CODECRAFT_CS_02/releases/download/v1.0.0/Cryptographer.apk)
+- [Cryptographer](https://clikn.in/ffEQFYr))
 - Or Scan the QR Code for Direct Download
-  <img width="300" height="300" alt="app_download_qr" src="https://github.com/user-attachments/assets/2490b01f-e632-43f3-bc45-6bc0adabfb4f" />
+  <img width="300" height="300" alt="app_download_qr" src="https://github.com/user-attachments/assets/18dd4f6d-a909-4c20-9515-23a252163075" />
+
 
 ---
 
