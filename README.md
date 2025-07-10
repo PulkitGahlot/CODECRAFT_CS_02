@@ -1,33 +1,53 @@
-# Cryptographer: A Caesar Cipher Text Encryptor & Decryptor (Flutter + Python) 🔐
+# 📱 Cryptographer: Text & Image Encryptor & Decryptor (Flutter + Python) 🔐🖼️
 
-A mobile application built using the **Flutter framework** and **Dart language**, integrated with a **Python FastAPI backend**, designed to Encrypt and Decrypt text messages using the **Caesar Cipher** algorithm based on ASCII values.
-This app provides a clean, user-friendly UI and demonstrates full-stack mobile development with Python integration. It is ideal for Educational Purposes, Cryptography Practice, and Demonstrating Client-Server Communication.
+This is a mobile application built with **Flutter** and integrated with a **Python FastAPI backend** that allows users to:
+- Encrypt and decrypt **text messages** using a Caesar Cipher (ASCII-based).
+- Encrypt and decrypt **images** using XOR pixel manipulation.
+
+Designed for **Cybersecurity Practice**, this tool demonstrates a simple yet powerful example of secure message and media exchange.
 
 ---
 
 ## 🚀 Features
 
-1. User Mode Selection: **Encrypt** or **Decrypt**.
-2. Enter Plain or Cipher text input.
-3. Set a **Custom Shift Key** value for the Caesar Cipher.
-4. Real-time processing via **Python backend API**.
-5. Output result displayed in a clean UI.
-6. Copy, paste, and share buttons integrated.
-7. Mobile-friendly layout that handles keyboard overflow gracefully.
-8. FastAPI-based backend that runs on your PC for local testing.
+### 📝 Text Encryption & Decryption
+- Caesar Cipher with **custom shift key**.
+- Input any ASCII-compatible message.
+- Converts plain text to cipher text and vice versa.
+- Buttons for **copy**, **paste**, and **share**.
+
+### 🖼️ Image Encryption & Decryption
+- Select image from gallery or camera.
+- Apply XOR encryption/decryption using numeric key.
+- Preview of selected image and processed image.
+- Share or **download the encrypted/decrypted image**.
+- Saves encrypted images to device **gallery**.
+
+### 🛠️ Additional
+- Fully mobile-friendly layout.
+- App bar titles dynamically reflect user-selected operation.
+- Clear separation between logic (backend) and UI (Flutter frontend).
+- Compatible with Android 15 and MediaStore image saving.
 
 ---
 
 ## 🧠 How It Works
 
-1. The app starts with a home screen where users choose between **Encryption** or **Decryption**.
-2. The user is navigated to a second screen with:
-   - Input box for the message
-   - Output box for the result
-   - Input for the shift key
-   - A Convert button to trigger the process
-3. On pressing "Convert", the Flutter app sends a **POST request** to a local FastAPI server.
-4. The backend performs Caesar Cipher encryption/decryption using **ASCII-based shifting** and returns the result.
+1. User lands on a Home Screen with **four options**:
+   - Encrypt Text
+   - Decrypt Text
+   - Encrypt Image
+   - Decrypt Image
+
+2. Based on selection, user is navigated to:
+   - `process_screen.dart` for text
+   - `image_process_screen.dart` for images
+
+3. The Flutter app sends a **POST request** to the local FastAPI backend:
+   - For text: `/cipher` endpoint
+   - For image: `/image_cipher` endpoint (uses XOR logic on RGB pixels)
+
+4. The result is shown on the screen with options to **copy**, **share**, or **save**.
 
 ---
 
@@ -52,8 +72,8 @@ cryptographer/
 1. Install Flutter: https://flutter.dev/docs/get-started/install
 2. Clone the repository:
    ```sh
-   git clone https://github.com/PulkitGahlot/CODECRAFT_CS_01.git
-   cd cryptographer
+   git clone https://github.com/PulkitGahlot/CODECRAFT_CS_02.git
+   cd CODECRAFT_CS_02
    ```
 3. Install packages:
    ```sh
@@ -63,7 +83,7 @@ cryptographer/
 5. Make sure your PC and phone are on the same Wi-Fi network
 6. Install dependencies:
    ```sh
-   pip install fastapi uvicorn pydantic
+   pip install fastapi uvicorn pydantic pillow
    ```
 7. Run the server:
    ```sh
@@ -85,23 +105,38 @@ cryptographer/
   **Dart (Flutter)**
   - http
   - flutter/services (clipboard)
+  - image_picker
+  - path_provider
+  - share_plus
+  - google_fonts
   
   **Python**
   - fastapi
   - uvicorn
   - pydantic
+  - pillow
 
 ---
 
 ## 📱 Screenshots
 
-![Home Screen](https://github.com/user-attachments/assets/da2f8057-9531-45b1-afff-9e67f02a5b95)      ![Process Screen](https://github.com/user-attachments/assets/be2c49a1-bb57-435a-ae72-65bf7e7ba6a2)
+<img width="440" height="962" alt="Home_Screen" src="https://github.com/user-attachments/assets/b3378a4b-1b9c-4b84-9da4-011fe27e7ff3" />      <img width="441" height="970" alt="Text_Enryption_Screen" src="https://github.com/user-attachments/assets/7443f654-f274-42aa-bdf8-8d47f3c11048" />
+
+<img width="436" height="964" alt="Image_Ecryption_Screen" src="https://github.com/user-attachments/assets/578a9f9b-7b52-4dc4-8b2c-e089ced5a834" />      <img width="440" height="972" alt="Image_Decryption_Screen" src="https://github.com/user-attachments/assets/ad382e2f-8dbf-4060-a963-5b17baec9a06" />
 
 ---
+
+## 📦 Enhancements
+- Added image_cipher API with XOR pixel encryption
+- Integrated camera/gallery picker for images
+- Used MediaStore-compliant saving with proper permissions
+- UI refined with Spacer(), Column alignment, and text centering
 
 ## 👨‍💻 Author
 
 Hi, I'm **Pulkit Gahlot**, a cyber security enthusiast and passionate to be an ethical hacker.
+
+“A good hacker is the one who breaks systems, to build secure ones.”
 
 Feel free to connect!
 - **Linkedin**: [Pulkit Gahlot](https://linkedin.com/in/pulkit-gahlot)
