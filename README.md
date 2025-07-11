@@ -1,4 +1,4 @@
-<img width="3000" height="3000" alt="app_download_qr" src="https://github.com/user-attachments/assets/d81141a4-81f0-4286-a200-22dec5316e39" /># 📱 Cryptographer: Text & Image Encryptor & Decryptor (Flutter + Python) 🔐🖼️
+# 📱 Cryptographer: Text & Image Encryptor & Decryptor (Flutter + Python) 🔐🖼️
 
 This is a mobile application built with **Flutter** and integrated with a **Python FastAPI backend** that allows users to:
 - Encrypt and decrypt **text messages** using a Caesar Cipher (ASCII-based).
