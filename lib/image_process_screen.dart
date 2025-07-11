@@ -188,17 +188,38 @@ class _ImageProcessScreenState extends State<ImageProcessScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            Container(alignment: 
+              Alignment.center,
+              height: 60, 
+              padding: EdgeInsets.all(9),
+              decoration: BoxDecoration(
+                            color: Colors.indigo.shade50,
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [  
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.4),
+                                blurRadius: 8,
+                                offset: Offset(2, 4),
+                              ),
+                            ],
+                            border: Border.all(color: Colors.indigo),
+                          ),
+                          child: Text("""NOTE: Image Encryption & Decryption takes time. Please wait for some time to get your converted image""",
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.oswald(fontSize: 12,),),
+                        
+            ),const SizedBox(height: 16,),
             if (_selectedImage != null)
               Column(
                 children: [
-                  Image.file(_selectedImage!, height: 200),
+                  Image.file(_selectedImage!, height: 160),
                   SizedBox(height: 16),
                 ],
               ),
             if (_outputImage != null)
               Column(
                 children: [
-                  Image.memory(_outputImage!, height: 200),
+                  Image.memory(_outputImage!, height: 160),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

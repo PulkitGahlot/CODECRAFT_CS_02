@@ -79,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           child: Text("""Your Go to Cryptograpy tool Armed with Text as well as Image Encrypter and Decrypter!!""",
                             textAlign: TextAlign.center,
-                            style: GoogleFonts.dancingScript(fontSize: 25,),),
+                            style: GoogleFonts.oswald(fontSize: 25,),),
                         ),
                       ),],
                     ),
