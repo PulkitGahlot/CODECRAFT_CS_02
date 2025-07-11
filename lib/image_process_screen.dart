@@ -233,7 +233,6 @@ class _ImageProcessScreenState extends State<ImageProcessScreen> {
             Row(
               children: [Expanded(
                 child: SizedBox(
-                  // width: 159,
                   height: 60,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
@@ -247,7 +246,6 @@ class _ImageProcessScreenState extends State<ImageProcessScreen> {
             Row(
               children: [Expanded(
                 child: SizedBox(
-                  // width: 159,
                   height: 60,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),

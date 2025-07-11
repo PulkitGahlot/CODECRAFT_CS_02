@@ -57,7 +57,7 @@ class _ProcessScreenState extends State<ProcessScreen> {
   }
 
   void _shareOutput() {
-    // This requires share_plus or similar package, left for future optional addition
+    // This requires share_plus or similar package
      if( _outputText.isNotEmpty){
        Share.share(_outputText);
      }else{
