@@ -1,4 +1,4 @@
-# 📱 Cryptographer: Text & Image Encryptor & Decryptor (Flutter + Python) 🔐🖼️
+<img width="3000" height="3000" alt="app_download_qr" src="https://github.com/user-attachments/assets/d81141a4-81f0-4286-a200-22dec5316e39" /># 📱 Cryptographer: Text & Image Encryptor & Decryptor (Flutter + Python) 🔐🖼️
 
 This is a mobile application built with **Flutter** and integrated with a **Python FastAPI backend** that allows users to:
 - Encrypt and decrypt **text messages** using a Caesar Cipher (ASCII-based).
@@ -135,9 +135,10 @@ cryptographer/
 ---
 
 ## Download the application Here
-- [Cryptographer](https://clikn.in/hq7yrcJ)
+- [Cryptographer](https://clikn.in/P0SqwIc)
 - Or Scan the QR Code for Direct Download
-  <img width="300" height="300" alt="app_download_qr" src="https://github.com/user-attachments/assets/8f4212b3-d956-4845-8d98-ee20e9a84a31" />
+  <img width="300" height="300" alt="app_download_qr" src="https://github.com/user-attachments/assets/fba743b8-e6cc-4d9d-8bef-8104952b3a5f" />
+
 
 
 **NOTE**: Encryption and Decryption of Images takes some time (Due to Slow Server response sometime). Please wait for some time to get the Output of the Image Encryption and Decryption. Thank you!
