@@ -135,9 +135,10 @@ cryptographer/
 ---
 
 ## Download the application Here
-- [Cryptographer](https://clikn.in/ffEQFYr))
+- [Cryptographer](https://clikn.in/5Fq7uQ0))
 - Or Scan the QR Code for Direct Download
-  <img width="300" height="300" alt="app_download_qr" src="https://github.com/user-attachments/assets/18dd4f6d-a909-4c20-9515-23a252163075" />
+  <img width="300" height="300" alt="app_download_qr" src="https://github.com/user-attachments/assets/bc1f20b8-8171-4da4-bf6f-acf627392b0b" />
+
 
 **NOTE**: Encryption and Decryption of Images takes some time (Due to Slow Server response sometime). Please wait for some time to get the Output of the Image Encryption and Decryption. Thank you!
 
