@@ -30,6 +30,7 @@ class _ProcessScreenState extends State<ProcessScreen> {
       }),
     );
 
+    // ---------------------To get the result from python backend-------------------
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
       setState(() {
@@ -56,6 +57,7 @@ class _ProcessScreenState extends State<ProcessScreen> {
     );
   }
 
+  // --------------------Share Button Function-------------------------
   void _shareOutput() {
     // This requires share_plus or similar package
      if( _outputText.isNotEmpty){

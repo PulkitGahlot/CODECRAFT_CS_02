@@ -14,12 +14,15 @@ class _PasswordCheckScreenState extends State<PasswordCheckScreen> {
   final TextEditingController _controller = TextEditingController();
   String _strength = "";
 
+
+  // ----------------To send request to python backend render api---------------------------
   Future<void> _checkStrength() async {
     final response = await http.post(
       Uri.parse("https://cryptographer-backend.onrender.com/check_password"),
       body: {'password': _controller.text},
     );
 
+    // --------------------To Get the result from python backend--------------------------
     if (response.statusCode == 200) {
       final data=jsonDecode(response.body);
       setState(() {
@@ -44,8 +47,8 @@ class _PasswordCheckScreenState extends State<PasswordCheckScreen> {
       return Colors.red;
     default:
       return Colors.black;
+    }
   }
-}
 
   @override
   Widget build(BuildContext context) {
