@@ -50,6 +50,8 @@ class _PasswordCheckScreenState extends State<PasswordCheckScreen> {
     }
   }
 
+  bool _isObscure = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,8 +64,10 @@ class _PasswordCheckScreenState extends State<PasswordCheckScreen> {
           children: [
             TextField(
               controller: _controller,
-              obscureText: true,
-              decoration: InputDecoration(labelText: "Enter Password", border: OutlineInputBorder()),
+              obscureText: _isObscure,
+              decoration: InputDecoration(labelText: "Enter Password", border: OutlineInputBorder(), suffixIcon: IconButton(icon: Icon(_isObscure?Icons.visibility:Icons.visibility_off) ,onPressed: () {setState(() {
+                _isObscure = !_isObscure;
+              });})),
             ),
             Spacer(),
             Text("Strength: $_strength", style: GoogleFonts.roboto(fontSize: 25, color: getStrengthColor(_strength))),
