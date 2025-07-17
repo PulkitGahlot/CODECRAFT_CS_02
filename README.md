@@ -135,9 +135,10 @@ cryptographer/
 ---
 
 ## Download the application Here
-- [Cryptographer](https://clikn.in/P0SqwIc)
+- [Cryptographer](https://clikn.in/LkJsOZ4)
 - Or Scan the QR Code for Direct Download
-  <img width="300" height="300" alt="app_download_qr" src="https://github.com/user-attachments/assets/fba743b8-e6cc-4d9d-8bef-8104952b3a5f" />
+  <img width="300" height="300" alt="app_download_qr" src="https://github.com/user-attachments/assets/2186eeb6-b06b-443f-9017-8126b3916abf" />
+
 
 
 
