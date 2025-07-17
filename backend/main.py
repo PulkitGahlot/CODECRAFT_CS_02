@@ -1,3 +1,4 @@
+import re
 from fastapi import FastAPI, UploadFile, File, Form
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
@@ -131,3 +132,27 @@ async def image_cipher(
 #     buffer.seek(0)
 
 #     return StreamingResponse(buffer, media_type="image/png")
+
+
+
+
+# ---------------PASSWORD CHECKER-------------
+
+@app.post("/check_password")
+async def check_password(password: str = Form(...)):
+    strength = "Weak"
+    length = len(password)
+
+    if length < 6:
+        strength = "Weak"
+    elif re.search(r"[A-Z]", password) and re.search(r"[a-z]", password) and re.search(r"[!@#$%^&*()]", password) and re.search(r"\d", password):
+        if length >= 12 and re.search(r"\W", password):
+            strength = "Very Strong"
+        elif length >= 8:
+            strength = "Strong"
+        else:
+            strength = "Medium"
+    elif length >= 8:
+        strength = "Medium"
+
+    return {"strength": strength}

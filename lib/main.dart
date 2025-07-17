@@ -1,3 +1,4 @@
+import 'package:cryptographer_tool/password_check_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'process_screen.dart';
@@ -36,6 +37,16 @@ class HomeScreen extends StatelessWidget {
       context,
       MaterialPageRoute(
         builder: (context) => ImageProcessScreen(mode: mode),
+      ),
+    );
+  }
+
+
+  void navigateToPasswordScreen(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => PasswordCheckScreen(),
       ),
     );
   }
@@ -121,6 +132,16 @@ class HomeScreen extends StatelessWidget {
                     style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
                     onPressed: () => navigateToImageProcess(context, 'decrypt'),
                     child:  Text('Decrypt Image',style: GoogleFonts.roboto(fontSize: 32)),
+                  ),
+                ),
+                const SizedBox(height: 16),
+                SizedBox(
+                  width: MediaQuery.of(context).size.height * 0.4,
+                  height: MediaQuery.of(context).size.width * 0.24,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
+                    onPressed: () => navigateToPasswordScreen(context),
+                    child:  Text('Check Password',style: GoogleFonts.roboto(fontSize: 32)),
                   ),
                 ),
               ],
